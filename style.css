@@ -1,0 +1,166 @@
+/* Ogólny styl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styl dla fiszek */
+.flashcard {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.translation {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Styl dla linków i przycisków */
+.button {
+    display: inline-block;
+    margin: 5px 0;
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+/* Styl kontenera zestawów */
+.sets-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.set-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.set-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.set-card h2 {
+    margin-bottom: 15px;
+}
+
+/* Styl dla tabeli słówek */
+.word-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.word-table th, .word-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.word-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Przyciski w prawym górnym rogu */
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+
+.search-button {
+    display: inline-block;
+    background-color: #fff;
+    color: green;
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .search-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid green;
+    pointer-events: none;
+  }
+  
+  .search-button:hover {
+    background-color: #eee;
+  }
+  
